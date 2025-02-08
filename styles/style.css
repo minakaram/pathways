@@ -2056,7 +2056,7 @@ nav .language-side .language-box .lang-absolute p:first-child {
 }
 @media (max-width: 1024px) {
   .cities .cities-container {
-    width: 95%;
+    width: 90%;
   }
 }
 .cities .cities-container .city-slide {
@@ -2727,7 +2727,7 @@ nav .language-side .language-box .lang-absolute p:first-child {
 }
 @media (max-width: 767px) {
   .headquarters .location-container {
-    width: 95%;
+    width: 90%;
     flex-direction: column;
   }
 }

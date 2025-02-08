@@ -1516,13 +1516,6 @@ nav .language-side .language-box .lang-absolute p:first-child {
   width: 100% !important;
   transform: unset;
 }
-@media (max-width: 767px) {
-  .course-catagories .catagories-swiper .catagoriesSwiper .catagories-pagination {
-    margin-top: 3rem !important;
-    margin-bottom: 0rem;
-    transform: unset;
-  }
-}
 .course-catagories .catagories-swiper .catagoriesSwiper .catagories-pagination .swiper-pagination-bullet {
   width: 33px;
   height: 3px;
@@ -1772,6 +1765,8 @@ nav .language-side .language-box .lang-absolute p:first-child {
   display: flex;
   justify-content: center;
   gap: 8px;
+  width: 100% !important;
+  transform: unset;
 }
 .top-courses .top-swiper .topSwiper .top-pagination .swiper-pagination-bullet {
   width: 33px;
@@ -1889,7 +1884,8 @@ nav .language-side .language-box .lang-absolute p:first-child {
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100% !important;
+  transform: unset;
 }
 @media (max-width: 1024px) {
   .partners .partners-swiper .partners-navigation {
@@ -2497,6 +2493,8 @@ nav .language-side .language-box .lang-absolute p:first-child {
   display: flex;
   justify-content: center;
   gap: 8px;
+  width: 100% !important;
+  transform: unset;
 }
 .crew .crew-swiper .crewSwiper .crew-pagination .swiper-pagination-bullet {
   width: 33px;

@@ -1616,11 +1616,6 @@ nav {
         width: 100% !important;
         transform: unset;
 
-        @include mobile {
-          margin-top: 3rem !important;
-          margin-bottom: 0rem;
-          transform: unset;
-        }
 
         .swiper-pagination-bullet {
           width: 33px;
@@ -1902,6 +1897,8 @@ nav {
         display: flex;
         justify-content: center;
         gap: 8px;
+        width: 100% !important;
+        transform: unset;
 
         .swiper-pagination-bullet {
           width: 33px;
@@ -2029,7 +2026,8 @@ nav {
       transform: translateY(-50%);
       display: flex;
       justify-content: space-between;
-      width: 100%;
+      width: 100% !important;
+      transform: unset;
 
       @include tablet {
         display: none;
@@ -2660,6 +2658,8 @@ nav {
         display: flex;
         justify-content: center;
         gap: 8px;
+        width: 100% !important;
+        transform: unset;
 
         .swiper-pagination-bullet {
           width: 33px;

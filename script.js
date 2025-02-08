@@ -442,6 +442,7 @@ const topCatagoriesSwiper = new Swiper(".topSwiper", {
     pagination: {
         el: ".top-pagination",
         clickable: true,
+        dynamicBullets: true,
     },
     navigation: {
         nextEl: ".top-button-next",
@@ -464,40 +465,6 @@ const topCatagoriesSwiper = new Swiper(".topSwiper", {
             spaceBetween: 30,
         },
     },
-    on: {
-        init: function () {
-            const paginationContainer = document.querySelector(".catagories-pagination");
-            const maxVisibleDots = 4;
-
-            // Get all child elements of the pagination container
-            const paginationDots = Array.from(paginationContainer.children);
-
-            // Hide pagination dots if they exceed the maxVisibleDots count
-            paginationDots.forEach((dot, index) => {
-                if (index >= maxVisibleDots) {
-                    dot.style.display = "none";
-                }
-            });
-
-            // Append SVG if there are more than maxVisibleDots
-            if (paginationDots.length > maxVisibleDots) {
-                const svgDots = document.createElement("p");
-                svgDots.style.display = "flex";
-                svgDots.style.marginLeft = "2px";
-                svgDots.innerHTML = `
-                    <svg width="23" height="5" viewBox="0 0 23 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="3" height="5" rx="1" fill="#666565" fill-opacity="0.3"/>
-                        <rect x="4" width="3" height="5" rx="1" fill="#666565" fill-opacity="0.3"/>
-                        <rect x="8" width="3" height="5" rx="1" fill="#666565" fill-opacity="0.3"/>
-                        <rect x="12" width="3" height="5" rx="1" fill="#666565" fill-opacity="0.3"/>
-                        <rect x="16" width="3" height="5" rx="1" fill="#666565" fill-opacity="0.3"/>
-                        <rect x="20" width="3" height="5" rx="1" fill="#666565" fill-opacity="0.3"/>
-                    </svg>
-                `;
-                paginationContainer.appendChild(svgDots);
-            }
-        },
-    },
 });
 
 // partners section swiper ------------------------------------------------------------------------------------------------
@@ -509,6 +476,7 @@ const partnersSwiper = new Swiper(".partnersSwiper", {
     pagination: {
         el: ".partners-pagination",
         clickable: true,
+        dynamicBullets: true,
     },
     navigation: {
         nextEl: ".partners-button-next",
@@ -542,6 +510,7 @@ const crewSwiper = new Swiper(".crewSwiper", {
     pagination: {
         el: ".crew-pagination",
         clickable: true,
+        dynamicBullets: true,
     },
     navigation: {
         nextEl: ".crew-button-next",
@@ -580,6 +549,7 @@ const testimonialSwiper = new Swiper(".testimonialsSwiper", {
     pagination: {
         el: ".testimonial-pagination",
         clickable: true,
+        dynamicBullets: true,
     },
     navigation: {
         nextEl: ".testimonial-button-next",
@@ -614,7 +584,7 @@ document.getElementById("copy-icon").addEventListener("click", function () {
     navigator.clipboard.writeText(addressText).then(() => {
         // Show tooltip
         tooltip.classList.add("show");
-        
+
         // Hide tooltip after 2 seconds
         setTimeout(() => {
             tooltip.classList.remove("show");

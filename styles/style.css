@@ -2727,7 +2727,7 @@ nav .language-side .language-box .lang-absolute p:first-child {
 }
 @media (max-width: 767px) {
   .headquarters .location-container {
-    width: 90%;
+    width: 9%;
     flex-direction: column;
   }
 }

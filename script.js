@@ -326,6 +326,7 @@ const upcommingSwiper = new Swiper(".upcomingSwiper", {
     pagination: {
         el: ".upcoming-pagination",
         clickable: true,
+        dynamicBullets: true,
     },
     navigation: {
         nextEl: ".upcoming-button-next",
@@ -338,16 +339,10 @@ const upcommingSwiper = new Swiper(".upcomingSwiper", {
         320: {
             slidesPerView: 1,
             spaceBetween: 10,
-            pagination: {
-                dynamicBullets: true, // Enable dynamic bullets only on small screens
-            },
         },
         768: {
             slidesPerView: 2,
             spaceBetween: 30,
-            pagination: {
-                dynamicBullets: true, // Enable dynamic bullets only on small screens
-            },
         },
         1120: {
             slidesPerView: 3,

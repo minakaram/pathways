@@ -588,3 +588,124 @@ document.getElementById("copy-icon").addEventListener("click", function () {
         console.error("Failed to copy: ", err);
     });
 });
+
+
+
+$(document).ready(function () {
+    const $searchOverlay = $('.search-overlay');
+    const $body = $('body');
+
+    // Function to show the overlay and disable scrolling
+    function showSearchOverlay() {
+        $searchOverlay.fadeIn(300);
+        $body.css('overflow', 'hidden'); // Disable scrolling
+        // $searchOverlay.css("overflow-y", "scroll");
+    }
+
+    // Function to hide the overlay and enable scrolling
+    function hideSearchOverlay() {
+        $searchOverlay.fadeOut(300, function () {
+            $body.css('overflow', ''); // Restore scrolling after fade-out completes
+        });
+    }
+
+    // Open overlay when clicking the search button
+    $('#nav-search-icon').click(function () {
+        showSearchOverlay();
+    });
+
+    // Close overlay when clicking the close button
+    $('#nav-search-cancel').click(function () {
+        hideSearchOverlay();
+    });
+
+    // Close overlay if clicking outside of it
+    $(document).click(function (event) {
+        if (!$(event.target).closest('.search-overlay, #nav-search-icon').length) {
+            hideSearchOverlay();
+        }
+    });
+});
+
+
+const searchCoursesSwiper = new Swiper(".nav-courses-results", {
+    slidesPerView: "auto", // Allow dynamic slide widths
+    spaceBetween: 20,
+    loop: false, // Set to false to allow proper scrolling
+    freeMode: true, // Enables smooth scrolling without snapping
+    // scrollbar: {
+    //     el: ".swiper-scrollbar",
+    //     draggable: true, // Allow manual scrolling
+    // },
+    mousewheel: {
+        forceToAxis: true, // Scrolls only in one direction
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1120: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    },
+});
+const searchCategoriesSwiper = new Swiper(".nav-categories-results", {
+    slidesPerView: "auto", // Allow dynamic slide widths
+    spaceBetween: 20,
+    loop: false, // Set to false to allow proper scrolling
+    freeMode: true, // Enables smooth scrolling without snapping
+    // scrollbar: {
+    //     el: ".swiper-scrollbar",
+    //     draggable: true, // Allow manual scrolling
+    // },
+    mousewheel: {
+        forceToAxis: true, // Scrolls only in one direction
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1120: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    },
+});
+const searchCitiesSwiper = new Swiper(".nav-cities-results", {
+    slidesPerView: "auto", // Allow dynamic slide widths
+    spaceBetween: 20,
+    loop: false, // Set to false to allow proper scrolling
+    freeMode: true, // Enables smooth scrolling without snapping
+    // scrollbar: {
+    //     el: ".swiper-scrollbar",
+    //     draggable: true, // Allow manual scrolling
+    // },
+    mousewheel: {
+        forceToAxis: true, // Scrolls only in one direction
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1120: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    },
+});

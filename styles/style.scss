@@ -37,10 +37,13 @@ nav {
       }
     }
 
-    img:nth-child(2) {
-      height: 44px;
-      width: 44px;
-    }
+a{
+  img:first-child {
+    height: 44px;
+    width: 44px;
+    display: block;
+  }
+}
 
     p {
       font-weight: 700;

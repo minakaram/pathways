@@ -122,9 +122,10 @@ nav .logo-side img:first-child {
     cursor: pointer;
   }
 }
-nav .logo-side img:nth-child(2) {
+nav .logo-side a img:first-child {
   height: 44px;
   width: 44px;
+  display: block;
 }
 nav .logo-side p {
   font-weight: 700;

@@ -975,6 +975,11 @@ form .form-container .form-section .form-box .inputs-box .single-input input {
   font-family: Poppins;
   font-size: 14px;
 }
+@media (max-width: 767px) {
+  form .form-container .form-section .form-box .inputs-box .single-input input {
+    font-size: 12px;
+  }
+}
 form .form-container .form-section .form-box .textarea-box {
   margin-bottom: 1rem;
 }
@@ -990,6 +995,11 @@ form .form-container .form-section .form-box .textarea-box textarea {
   padding: 1rem;
   min-height: 150px;
   max-height: 300px;
+}
+@media (max-width: 767px) {
+  form .form-container .form-section .form-box .textarea-box textarea {
+    font-size: 12px;
+  }
 }
 form .form-container .form-section .form-box .reference-box {
   margin-bottom: 1rem;
@@ -1011,6 +1021,11 @@ form .form-container .form-section .form-box .reference-box input {
   font-size: 14px;
   height: 52px;
   flex: 1;
+}
+@media (max-width: 767px) {
+  form .form-container .form-section .form-box .reference-box input {
+    font-size: 12px;
+  }
 }
 form .form-container .form-section .form-box .form-submission {
   padding: 3rem 1rem 3rem 0rem;

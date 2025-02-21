@@ -22,17 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
             event.stopPropagation();
         }
     });
-
-
-    // langMenu.addEventListener('click', (event) => {
-    //     const link = event.target.closest('a'); // Ensure we target the correct <a> element
-    //     if (link) {
-    //         languageBox.querySelector('span').textContent = link.textContent.trim(); // Update the span with the link text
-    //         langMenu.style.display = 'none';
-    //         event.stopPropagation();
-    //     }
-    // });
-
 });
 
 // more menu ---------------------------------------------------------------------------------------------
@@ -147,16 +136,16 @@ const searchCategoriesSwiper = new Swiper(".nav-categories-results", {
 });
 
 const searchCitiesSwiper = new Swiper(".nav-cities-results", {
-    slidesPerView: "auto", // Allow dynamic slide widths
+    slidesPerView: "auto", 
     spaceBetween: 20,
-    loop: false, // Set to false to allow proper scrolling
-    freeMode: true, // Enables smooth scrolling without snapping
+    loop: false, 
+    freeMode: true,
     // scrollbar: {
     //     el: ".swiper-scrollbar",
     //     draggable: true, // Allow manual scrolling
     // },
     mousewheel: {
-        forceToAxis: true, // Scrolls only in one direction
+        forceToAxis: true,
     },
     breakpoints: {
         320: {

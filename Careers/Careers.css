@@ -894,6 +894,9 @@ nav .language-side .language-box .lang-absolute p:first-child {
   }
 }
 
+.main-section {
+  position: relative;
+}
 .main-section .vector {
   position: absolute;
   top: 0rem;

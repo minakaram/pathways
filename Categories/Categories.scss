@@ -1450,6 +1450,10 @@ nav {
             gap: 1.5rem;
             margin-top: 5rem !important;
 
+            @include mobile {
+                gap: 1rem;
+            }
+
             .pages {
                 display: flex;
                 justify-content: center;

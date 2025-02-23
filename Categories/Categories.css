@@ -16,6 +16,7 @@ h2,
 h3,
 h4 {
   font-size: 16px;
+  margin-bottom: 0;
 }
 
 @font-face {
@@ -1354,6 +1355,11 @@ nav .language-side .language-box .lang-absolute p:first-child {
   align-items: center;
   gap: 1.5rem;
   margin-top: 5rem !important;
+}
+@media (max-width: 767px) {
+  .main-container .inner-container .pagination {
+    gap: 1rem;
+  }
 }
 .main-container .inner-container .pagination .pages {
   display: flex;

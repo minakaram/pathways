@@ -1012,12 +1012,20 @@ nav {
         width: 70%;
         margin: 3rem auto;
 
+        @include tablet {
+            width: 90%;
+        }
+
         .job-opportunities-heading {
             h1 {
                 text-align: center;
                 font-size: 32px;
                 font-weight: 700;
                 font-family: Cairo;
+
+                @include mobile {
+                    font-size: 24px;
+                }
             }
 
             p {
@@ -1026,6 +1034,10 @@ nav {
                 margin: 1rem auto;
                 font-family: Cairo;
                 line-height: 30px;
+
+                @include mobile {
+                    width: 100%;
+                }
 
                 span {
                     color: var(--secondary-500);
@@ -1042,6 +1054,10 @@ nav {
             gap: 2rem;
             width: 100%;
             margin: 4rem auto;
+
+            @include mobile {
+                grid-template-columns: repeat(1, 1fr);
+            }
 
             .single-job {
                 border: 1px solid #DBDBDB;
@@ -1068,6 +1084,9 @@ nav {
                         display: flex;
                         gap: 10px;
                         align-items: center;
+                        @include mobile {
+                            font-size: 14px;
+                        }
                     }
                 }
 
@@ -1081,6 +1100,10 @@ nav {
                         font-size: 24px;
                         font-family: Poppins;
                         font-weight: 500;
+
+                        @include mobile {
+                            font-size: 16px;
+                        }
                     }
                 }
 

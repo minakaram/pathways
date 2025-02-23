@@ -280,6 +280,6 @@ $(document).ready(function () {
     $(".apply-button").click(function () {
         $("html, body").animate({
             scrollTop: $(".apply-form").offset().top - 100
-        }, 800);
+        }, 400);
     });
 });

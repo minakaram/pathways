@@ -16,6 +16,7 @@ h2,
 h3,
 h4 {
   font-size: 16px;
+  margin-bottom: 0;
 }
 
 @font-face {
@@ -956,11 +957,21 @@ nav .language-side .language-box .lang-absolute p:first-child {
   width: 70%;
   margin: 3rem auto;
 }
+@media (max-width: 1024px) {
+  .main-section .job-opportunities {
+    width: 90%;
+  }
+}
 .main-section .job-opportunities .job-opportunities-heading h1 {
   text-align: center;
   font-size: 32px;
   font-weight: 700;
   font-family: Cairo;
+}
+@media (max-width: 767px) {
+  .main-section .job-opportunities .job-opportunities-heading h1 {
+    font-size: 24px;
+  }
 }
 .main-section .job-opportunities .job-opportunities-heading p {
   text-align: center;
@@ -968,6 +979,11 @@ nav .language-side .language-box .lang-absolute p:first-child {
   margin: 1rem auto;
   font-family: Cairo;
   line-height: 30px;
+}
+@media (max-width: 767px) {
+  .main-section .job-opportunities .job-opportunities-heading p {
+    width: 100%;
+  }
 }
 .main-section .job-opportunities .job-opportunities-heading p span {
   color: var(--secondary-500);
@@ -981,6 +997,11 @@ nav .language-side .language-box .lang-absolute p:first-child {
   gap: 2rem;
   width: 100%;
   margin: 4rem auto;
+}
+@media (max-width: 767px) {
+  .main-section .job-opportunities .jobs-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .main-section .job-opportunities .jobs-box .single-job {
   border: 1px solid #DBDBDB;
@@ -1007,6 +1028,11 @@ nav .language-side .language-box .lang-absolute p:first-child {
   gap: 10px;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .main-section .job-opportunities .jobs-box .single-job .single-job-top .date {
+    font-size: 14px;
+  }
+}
 .main-section .job-opportunities .jobs-box .single-job .single-job-bottom {
   display: flex;
   justify-content: space-between;
@@ -1017,6 +1043,11 @@ nav .language-side .language-box .lang-absolute p:first-child {
   font-size: 24px;
   font-family: Poppins;
   font-weight: 500;
+}
+@media (max-width: 767px) {
+  .main-section .job-opportunities .jobs-box .single-job .single-job-bottom p {
+    font-size: 16px;
+  }
 }
 .main-section .job-opportunities .jobs-box .single-job:hover {
   border: 1px solid var(--secondary-500);

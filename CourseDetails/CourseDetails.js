@@ -249,41 +249,36 @@ document.addEventListener('click', (event) => {
 
 
 function copyToClipboard() {
-    const text = document.getElementById("courseCode").innerText;
+    const text = document.querySelector(".course-code").innerText;
     navigator.clipboard.writeText(text).then(() => {
-        const tooltip = document.querySelector(".tooltip");
-
-        if (window.innerWidth <= 1024) { // Mobile behavior
-            showToast("Copied!");
-        } else { // Desktop behavior
-            tooltip.innerText = "Copied!";
-            tooltip.classList.add("copied");
-
-            setTimeout(() => {
-                tooltip.innerText = "Copy";
-                tooltip.classList.remove("copied");
-            }, 2000);
+        const copyBox = document.querySelector(".copy-box");
+        
+        // Remove existing toast if present
+        let existingToast = document.querySelector(".toast-message");
+        if (existingToast) {
+            existingToast.remove();
         }
+
+        // Create new toast
+        let toast = document.createElement("div");
+        toast.className = "toast-message";
+        toast.innerText = "Copied!";
+        copyBox.appendChild(toast);
+
+        // Show the toast
+        setTimeout(() => {
+            toast.classList.add("show");
+        }, 100);
+
+        // Hide and remove the toast after 2 seconds
+        setTimeout(() => {
+            toast.classList.remove("show");
+            setTimeout(() => toast.remove(), 300);
+        }, 2000);
 
         // Optional: Add vibration for mobile users
         if (navigator.vibrate) {
             navigator.vibrate(100); // Vibrate for 100ms
         }
     });
-}
-
-function showToast(message) {
-    let toast = document.createElement("div");
-    toast.className = "toast-message";
-    toast.innerText = message;
-    document.body.appendChild(toast);
-
-    setTimeout(() => {
-        toast.classList.add("show");
-    }, 100);
-
-    setTimeout(() => {
-        toast.classList.remove("show");
-        setTimeout(() => toast.remove(), 300);
-    }, 2000);
 }

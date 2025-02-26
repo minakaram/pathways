@@ -1466,28 +1466,34 @@ footer .copyrights-section p {
 }
 
 .toast-message {
-  position: fixed;
-  bottom: 50px;
-  left: 50%;
+  position: absolute;
+  top: -10px;
+  /* Adjust this value to position the toast properly */
+  right: -2rem;
   transform: translateX(-50%);
   background-color: var(--secondary-700);
   color: #fff;
-  font-weight: 600;
-  padding: 10px 15px;
-  border-radius: 8px;
-  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
   opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
-  z-index: 9999;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+  pointer-events: none;
+  /* Prevent interaction */
 }
 
 .toast-message.show {
   opacity: 1;
-  transform: translateX(-50%) translateY(-10px);
+  transform: translateX(-50%) translateY(-5px);
 }
 
-@media (max-width: 1024px) {
-  .copy-box {
-    align-items: center;
-  }
+.copy-box {
+  position: relative;
+  /* Needed for absolute positioning of the toast */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }/*# sourceMappingURL=CourseDetails.css.map */

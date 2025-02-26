@@ -1123,6 +1123,7 @@ nav {
                 grid-template-columns: repeat(1, 1fr);
                 width: 100%;
                 margin: 3rem auto;
+                margin-bottom: 1rem;
             }
 
             button {
@@ -1157,6 +1158,12 @@ nav {
             border: none;
             display: block;
             margin: 3rem auto;
+
+            @include mobile{
+                width: 100%;
+                margin: 3rem auto;
+                margin-top: 1.5rem;
+            }
         }
 
         @include tablet {

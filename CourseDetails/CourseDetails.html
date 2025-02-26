@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/fontawesome.js"></script>
+    <script defer src="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./CourseDetails.css">
+    <script defer src="./CourseDetails.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!---------------------------------------------- Navbar --------------------------------------------------->
+    <nav>
+        <div class="logo-side">
+            <img id="navigation-mobile-toggler" src="../HomeAssets/navbar/toggler.svg" alt="">
+
+            <a href="../index.html">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M22 44C34.1503 44 44 34.1503 44 22C44 9.84975 34.1503 0 22 0C9.84971 0 0 9.84975 0 22C0 34.1503 9.84971 44 22 44ZM28.8632 10.2485C29.1973 9.06186 28.0457 8.36015 26.994 9.10944L12.3124 19.5685C11.1718 20.3811 11.3512 22 12.5819 22H16.448V21.9701L20.7243 21.9885C21.2769 21.9909 21.4178 22.7558 20.9022 22.955L17.8433 24.1363L15.1368 33.7515C14.8027 34.9382 15.9542 35.6399 17.006 34.8906L31.6876 24.4315C32.8282 23.619 32.6487 22 31.4181 22H25.5553L28.8632 10.2485Z"
+                        fill="white" />
+                </svg>
+            </a>
+
+            <p>Pathways</p>
+            <div class="navigation-box-mobile">
+                <a href="../index.html">Home</a>
+                <a href="../Categories/Categories.html">Categoties</a>
+                <a href="../CustomCourses/CustomCourses.html">Custom Courses</a>
+                <a href="../AboutUs/AboutUs.html">About us</a>
+                <a href="../ContactUs/ContactUs.html">Contact us</a>
+                <a href="../Careers/Careers.html">Careers</a>
+            </div>
+        </div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li>
+                <a href="../Categories/Categories.html">Categoties</a>
+                <svg id="categories-nav-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.4181 8.9502L13.8981 15.4702C13.1281 16.2402 11.8681 16.2402 11.0981 15.4702L4.57812 8.9502"
+                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+                <div class="categories-nav-dropdown">
+                    <a href="" class="single-category">
+                        <p>Category name</p>
+                        <span>7 Courses</span>
+                    </a>
+                    <a href="" class="single-category">
+                        <p>Category name</p>
+                        <span>7 Courses</span>
+                    </a>
+                    <a href="" class="single-category">
+                        <p>Category name</p>
+                        <span>7 Courses</span>
+                    </a>
+                    <a href="" class="single-category">
+                        <p>Category name</p>
+                        <span>7 Courses</span>
+                    </a>
+                    <a href="" class="single-category">
+                        <p>Category name</p>
+                        <span>7 Courses</span>
+                    </a>
+                    <a href="" class="single-category">
+                        <p>Category name</p>
+                        <span>7 Courses</span>
+                    </a>
+                    <a href="" class="single-category">
+                        <p>Category name</p>
+                        <span>7 Courses</span>
+                    </a>
+                    <a href="" class="single-category">
+                        <p>Category name</p>
+                        <span>7 Courses</span>
+                    </a>
+                    <a href="" class="single-category">
+                        <p>Category name</p>
+                        <span>7 Courses</span>
+                    </a>
+                    <a href="" class="single-category">
+                        <p>Category name</p>
+                        <span>7 Courses</span>
+                    </a>
+                    <a href="" class="single-category">
+                        <p>Category name</p>
+                        <span>7 Courses</span>
+                    </a>
+                    <a href="" class="single-category">
+                        <p>Category name</p>
+                        <span>7 Courses</span>
+                    </a>
+                    <a href="" class="single-category">
+                        <p>Category name</p>
+                        <span>7 Courses</span>
+                    </a>
+                </div>
+            </li>
+            <li class="active-link">
+                <a href="#">Cities</a>
+                <svg id="cities-nav-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.4181 8.9502L13.8981 15.4702C13.1281 16.2402 11.8681 16.2402 11.0981 15.4702L4.57812 8.9502"
+                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+                <div class="cities-nav-dropdown">
+                    <div class="single-city">
+                        <img src="./Assets/navbar/Egypt.png" alt="">
+                        <a href="">City name</a>
+                    </div>
+                    <div class="single-city">
+                        <img src="./Assets/navbar/Ireland.png" alt="">
+                        <a href="">City name</a>
+                    </div>
+                    <div class="single-city">
+                        <img src="./Assets/navbar/Lebanon.png" alt="">
+                        <a href="">City name</a>
+                    </div>
+                    <div class="single-city">
+                        <img src="./Assets/navbar/moscow.png" alt="">
+                        <a href="">City name</a>
+                    </div>
+                    <div class="single-city">
+                        <img src="./Assets/navbar/Egypt.png" alt="">
+                        <a href="">City name</a>
+                    </div>
+                    <div class="single-city">
+                        <img src="./Assets/navbar/Ireland.png" alt="">
+                        <a href="">City name</a>
+                    </div>
+                    <div class="single-city">
+                        <img src="./Assets/navbar/Lebanon.png" alt="">
+                        <a href="">City name</a>
+                    </div>
+                    <div class="single-city">
+                        <img src="./Assets/navbar/moscow.png" alt="">
+                        <a href="">City name</a>
+                    </div>
+                    <div class="single-city">
+                        <img src="./Assets/navbar/Egypt.png" alt="">
+                        <a href="">City name</a>
+                    </div>
+                    <div class="single-city">
+                        <img src="./Assets/navbar/Ireland.png" alt="">
+                        <a href="">City name</a>
+                    </div>
+                    <div class="single-city">
+                        <img src="./Assets/navbar/Lebanon.png" alt="">
+                        <a href="">City name</a>
+                    </div>
+                    <div class="single-city">
+                        <img src="./Assets/navbar/moscow.png" alt="">
+                        <a href="">City name</a>
+                    </div>
+                    <div class="single-city">
+                        <img src="./Assets/navbar/Egypt.png" alt="">
+                        <a href="">City name</a>
+                    </div>
+                    <div class="single-city">
+                        <img src="./Assets/navbar/Ireland.png" alt="">
+                        <a href="">City name</a>
+                    </div>
+                    <div class="single-city">
+                        <img src="./Assets/navbar/Ireland.png" alt="">
+                        <a href="">City name</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="../CustomCourses/CustomCourses.html">Custom Courses</a></li>
+            <li class="more">
+                <span>More</span>
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.4181 8.9502L13.8981 15.4702C13.1281 16.2402 11.8681 16.2402 11.0981 15.4702L4.57812 8.9502"
+                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+                <div class="more-dropdown">
+                    <p><a href="../AboutUs/AboutUs.html">About Us</a></p>
+                    <p><a href="../ContactUs/ContactUs.html">Contact Us</a></p>
+                    <p><a href="../Careers/Careers.html">Careers</a></p>
+                </div>
+            </li>
+
+        </ul>
+
+        <div class="language-side">
+            <svg id="nav-search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M9.58464 17.5C13.9569 17.5 17.5013 13.9556 17.5013 9.58332C17.5013 5.21107 13.9569 1.66666 9.58464 1.66666C5.21238 1.66666 1.66797 5.21107 1.66797 9.58332C1.66797 13.9556 5.21238 17.5 9.58464 17.5Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M18.3346 18.3333L16.668 16.6667" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+
+            <div class="language-box">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_648_13576)">
+                        <path
+                            d="M1.66797 9.99984C1.66797 14.6023 5.3988 18.3332 10.0013 18.3332C14.6038 18.3332 18.3346 14.6023 18.3346 9.99984C18.3346 5.39734 14.6038 1.6665 10.0013 1.6665C5.3988 1.6665 1.66797 5.39734 1.66797 9.99984Z"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M10.837 1.70801C10.837 1.70801 13.337 4.99967 13.337 9.99967C13.337 14.9997 10.837 18.2913 10.837 18.2913M9.17031 18.2913C9.17031 18.2913 6.67031 14.9997 6.67031 9.99967C6.67031 4.99967 9.17031 1.70801 9.17031 1.70801M2.19531 12.9163H17.812M2.19531 7.08301H17.812"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_648_13576">
+                            <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <span>AR</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13.2594 6.34387L9.18437 10.4189C8.70312 10.9001 7.91562 10.9001 7.43437 10.4189L3.35938 6.34387"
+                        stroke="white" stroke-width="0.9375" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+                <div class="lang-absolute">
+                    <p><a href="">EN</a></p>
+                    <p><a href="">AR</a></p>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-------------------------------------------- search overlay --------------------------------------------->
+    <div class="search-overlay">
+        <form action="">
+            <div class="top-row">
+                <div class="nav-search-box">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.16666 15.8334C12.8486 15.8334 15.8334 12.8486 15.8334 9.16666C15.8334 5.48476 12.8486 2.5 9.16666 2.5C5.48476 2.5 2.5 5.48476 2.5 9.16666C2.5 12.8486 5.48476 15.8334 9.16666 15.8334Z"
+                            stroke="#9E9E9E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M17.5 17.5001L13.875 13.8751" stroke="#9E9E9E" stroke-width="1.6"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <input placeholder="Search for a course, Category or City" type="text">
+                </div>
+                <p id="nav-search-cancel">Cancel</p>
+            </div>
+            <div class="search-results-box">
+                <div class="nav-courses-results">
+                    <p class="heading">Courses</p>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <div class="swiper-slide-box">
+                                    <img src="./Assets/upcoming-courses/image-slide.jpg" alt="">
+                                    <div class="course-details">
+                                        <div class="course-type">Classroom</div>
+                                        <h3 class="course-name">Building Personal Leadership Skills : Creating Stronger
+                                            Relationships for a Stronger Organisation
+
+                                        </h3>
+                                        <div class="course-duration">
+                                            <img src="./Assets/upcoming-courses/duration.svg" alt="">
+                                            <span>16 Aug, 2024</span>
+                                            <img src="./Assets/upcoming-courses/duration-arrow.svg" alt="">
+                                            <span>20 Aug, 2024</span>
+                                        </div>
+                                        <div class="city-salary">
+                                            <p class="city">
+                                                <img src="./Assets/upcoming-courses/location.svg" alt="">
+                                                <span>Cairo</span>
+                                            </p>
+                                            <p class="salary">
+                                                <img src="./Assets/upcoming-courses/cost.svg" alt="">
+                                                <span>$200</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-side-overlay">
+                                    <p class="view-details-p">
+                                        <a href="">View Details</a>
+                                        <img src="./Assets/upcoming-courses/course-detaills-arrow.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <div class="swiper-slide-box">
+                                    <img src="./Assets/upcoming-courses/image-slide.jpg" alt="">
+                                    <div class="course-details">
+                                        <div class="course-type">Classroom</div>
+                                        <h3 class="course-name">Building Personal Leadership Skills : Creating Stronger
+                                            Relationships for a Stronger Organisation
+
+                                        </h3>
+                                        <div class="course-duration">
+                                            <img src="./Assets/upcoming-courses/duration.svg" alt="">
+                                            <span>16 Aug, 2024</span>
+                                            <img src="./Assets/upcoming-courses/duration-arrow.svg" alt="">
+                                            <span>20 Aug, 2024</span>
+                                        </div>
+                                        <div class="city-salary">
+                                            <p class="city">
+                                                <img src="./Assets/upcoming-courses/location.svg" alt="">
+                                                <span>Cairo</span>
+                                            </p>
+                                            <p class="salary">
+                                                <img src="./Assets/upcoming-courses/cost.svg" alt="">
+                                                <span>$200</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-side-overlay">
+                                    <p class="view-details-p">
+                                        <a href="">View Details</a>
+                                        <img src="./Assets/upcoming-courses/course-detaills-arrow.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <div class="swiper-slide-box">
+                                    <img src="./Assets/upcoming-courses/image-slide.jpg" alt="">
+                                    <div class="course-details">
+                                        <div class="course-type">Classroom</div>
+                                        <h3 class="course-name">Building Personal Leadership Skills : Creating Stronger
+                                            Relationships for a Stronger Organisation
+
+                                        </h3>
+                                        <div class="course-duration">
+                                            <img src="./Assets/upcoming-courses/duration.svg" alt="">
+                                            <span>16 Aug, 2024</span>
+                                            <img src="./Assets/upcoming-courses/duration-arrow.svg" alt="">
+                                            <span>20 Aug, 2024</span>
+                                        </div>
+                                        <div class="city-salary">
+                                            <p class="city">
+                                                <img src="./Assets/upcoming-courses/location.svg" alt="">
+                                                <span>Cairo</span>
+                                            </p>
+                                            <p class="salary">
+                                                <img src="./Assets/upcoming-courses/cost.svg" alt="">
+                                                <span>$200</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-side-overlay">
+                                    <p class="view-details-p">
+                                        <a href="">View Details</a>
+                                        <img src="./Assets/upcoming-courses/course-detaills-arrow.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <div class="swiper-slide-box">
+                                    <img src="./Assets/upcoming-courses/image-slide.jpg" alt="">
+                                    <div class="course-details">
+                                        <div class="course-type">Classroom</div>
+                                        <h3 class="course-name">Building Personal Leadership Skills : Creating Stronger
+                                            Relationships for a Stronger Organisation
+
+                                        </h3>
+                                        <div class="course-duration">
+                                            <img src="./Assets/upcoming-courses/duration.svg" alt="">
+                                            <span>16 Aug, 2024</span>
+                                            <img src="./Assets/upcoming-courses/duration-arrow.svg" alt="">
+                                            <span>20 Aug, 2024</span>
+                                        </div>
+                                        <div class="city-salary">
+                                            <p class="city">
+                                                <img src="./Assets/upcoming-courses/location.svg" alt="">
+                                                <span>Cairo</span>
+                                            </p>
+                                            <p class="salary">
+                                                <img src="./Assets/upcoming-courses/cost.svg" alt="">
+                                                <span>$200</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-side-overlay">
+                                    <p class="view-details-p">
+                                        <a href="">View Details</a>
+                                        <img src="./Assets/upcoming-courses/course-detaills-arrow.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <div class="swiper-slide-box">
+                                    <img src="./Assets/upcoming-courses/image-slide.jpg" alt="">
+                                    <div class="course-details">
+                                        <div class="course-type">Classroom</div>
+                                        <h3 class="course-name">Building Personal Leadership Skills : Creating Stronger
+                                            Relationships for a Stronger Organisation
+
+                                        </h3>
+                                        <div class="course-duration">
+                                            <img src="./Assets/upcoming-courses/duration.svg" alt="">
+                                            <span>16 Aug, 2024</span>
+                                            <img src="./Assets/upcoming-courses/duration-arrow.svg" alt="">
+                                            <span>20 Aug, 2024</span>
+                                        </div>
+                                        <div class="city-salary">
+                                            <p class="city">
+                                                <img src="./Assets/upcoming-courses/location.svg" alt="">
+                                                <span>Cairo</span>
+                                            </p>
+                                            <p class="salary">
+                                                <img src="./Assets/upcoming-courses/cost.svg" alt="">
+                                                <span>$200</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-side-overlay">
+                                    <p class="view-details-p">
+                                        <a href="">View Details</a>
+                                        <img src="./Assets/upcoming-courses/course-detaills-arrow.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-categories-results">
+                    <p class="heading">Categories</p>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <div class="swiper-slide-box">
+                                    <img src="./Assets/upcoming-courses/image-slide.jpg" alt="">
+                                    <div class="course-details">
+                                        <div class="course-type">9 Courses</div>
+                                        <h3 class="course-name">Building Personal Leadership Skills : Creating Stronger
+                                            Relationships for a Stronger Organisation
+
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="swiper-side-overlay">
+                                    <p class="view-details-p">
+                                        <a href="">View Details</a>
+                                        <img src="./Assets/upcoming-courses/course-detaills-arrow.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <div class="swiper-slide-box">
+                                    <img src="./Assets/upcoming-courses/image-slide.jpg" alt="">
+                                    <div class="course-details">
+                                        <div class="course-type">9 Courses</div>
+                                        <h3 class="course-name">Building Personal Leadership Skills : Creating Stronger
+                                            Relationships for a Stronger Organisation
+
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="swiper-side-overlay">
+                                    <p class="view-details-p">
+                                        <a href="">View Details</a>
+                                        <img src="./Assets/upcoming-courses/course-detaills-arrow.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <div class="swiper-slide-box">
+                                    <img src="./Assets/upcoming-courses/image-slide.jpg" alt="">
+                                    <div class="course-details">
+                                        <div class="course-type">9 Courses</div>
+                                        <h3 class="course-name">Building Personal Leadership Skills : Creating Stronger
+                                            Relationships for a Stronger Organisation
+
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="swiper-side-overlay">
+                                    <p class="view-details-p">
+                                        <a href="">View Details</a>
+                                        <img src="./Assets/upcoming-courses/course-detaills-arrow.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <div class="swiper-slide-box">
+                                    <img src="./Assets/upcoming-courses/image-slide.jpg" alt="">
+                                    <div class="course-details">
+                                        <div class="course-type">9 Courses</div>
+                                        <h3 class="course-name">Building Personal Leadership Skills : Creating Stronger
+                                            Relationships for a Stronger Organisation
+
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="swiper-side-overlay">
+                                    <p class="view-details-p">
+                                        <a href="">View Details</a>
+                                        <img src="./Assets/upcoming-courses/course-detaills-arrow.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-container">
+                                <div class="swiper-slide-box">
+                                    <img src="./Assets/upcoming-courses/image-slide.jpg" alt="">
+                                    <div class="course-details">
+                                        <div class="course-type">9 Courses</div>
+                                        <h3 class="course-name">Building Personal Leadership Skills : Creating Stronger
+                                            Relationships for a Stronger Organisation
+
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="swiper-side-overlay">
+                                    <p class="view-details-p">
+                                        <a href="">View Details</a>
+                                        <img src="./Assets/upcoming-courses/course-detaills-arrow.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-cities-results">
+                    <p class="heading">Cities</p>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="city-slide-content">
+                                <img src="././Assets/cities/1.png" alt="">
+                                <h2>bahnhof eastbourne</h2>
+                                <p>7 Courses</p>
+                            </div>
+                            <a class="city-slide-overlay">
+                                <h2>Click to <br> View Details</h2>
+                                <img src="./Assets/cities/view-button.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="city-slide-content">
+                                <img src="././Assets/cities/2.png" alt="">
+                                <h2>bahnhof eastbourne</h2>
+                                <p>7 Courses</p>
+                            </div>
+                            <a class="city-slide-overlay">
+                                <h2>Click to <br> View Details</h2>
+                                <img src="./Assets/cities/view-button.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="city-slide-content">
+                                <img src="././Assets/cities/6.png" alt="">
+                                <h2>bahnhof eastbourne</h2>
+                                <p>7 Courses</p>
+                            </div>
+                            <a class="city-slide-overlay">
+                                <h2>Click to <br> View Details</h2>
+                                <img src="./Assets/cities/view-button.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="city-slide-content">
+                                <img src="././Assets/cities/3.png" alt="">
+                                <h2>bahnhof eastbourne</h2>
+                                <p>7 Courses</p>
+                            </div>
+                            <a class="city-slide-overlay">
+                                <h2>Click to <br> View Details</h2>
+                                <img src="./Assets/cities/view-button.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="city-slide-content">
+                                <img src="././Assets/cities/4.png" alt="">
+                                <h2>bahnhof eastbourne</h2>
+                                <p>7 Courses</p>
+                            </div>
+                            <a class="city-slide-overlay">
+                                <h2>Click to <br> View Details</h2>
+                                <img src="./Assets/cities/view-button.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="city-slide-content">
+                                <img src="././Assets/cities/5.png" alt="">
+                                <h2>bahnhof eastbourne</h2>
+                                <p>7 Courses</p>
+                            </div>
+                            <a class="city-slide-overlay">
+                                <h2>Click to <br> View Details</h2>
+                                <img src="./Assets/cities/view-button.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-------------------------------------------- Hero Section ----------------------------------------------->
+    <div class="hero-section">
+        <img class="hero-image" src="./Assets/hero-section/hero-image.png" alt="">
+        <img class="overlay" src="./Assets/hero-section/overlay.png" alt="">
+        <div class="hero-content">
+            <div class="hero-content-upper">
+                <div class="copy-box">
+                    <img src="Assets/hero-section/hash.svg" alt="">
+                    <p class="course-code" id="courseCode">MA - 123005</p>
+                    <div class="copy-icon" onclick="copyToClipboard()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 12.9V17.1C16 20.6 14.6 22 11.1 22H6.9C3.4 22 2 20.6 2 17.1V12.9C2 9.4 3.4 8 6.9 8H11.1C14.6 8 16 9.4 16 12.9Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path opacity="0.4"
+                                d="M22 6.9V11.1C22 14.6 20.6 16 17.1 16H16V12.9C16 9.4 14.6 8 11.1 8H8V6.9C8 3.4 9.4 2 12.9 2H17.1C20.6 2 22 3.4 22 6.9Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span class="tooltip">Copy</span>
+                    </div>
+                </div>                
+                <div class="city-row">
+                    <img src="Assets/flags/1.svg" alt="">
+                    <span> in Romania</span>
+                </div>
+                <p class="course-subtitle">Mechanical & Electrical Engineering</p>
+                <h1 class="course-title">Transport of Solids: <span>Hydraulic & Pneumatic Conveying</span></h1>
+                <div class="course-details">
+                    <div class="course-details-box">
+                        <img src="Assets/hero-section/hotel-svg.svg" alt="">
+                        <p>Hotel:<span> Hotel name</span></p>
+                    </div>
+                    <div class="course-details-box">
+                        <img src="Assets/hero-section/duration.svg" alt="">
+                        <p>Duration: <span> 3 months</span></p>
+                    </div>
+                    <div class="course-details-box">
+                        <img src="Assets/hero-section/time-svg.svg" alt="">
+                        <p>Time: <span> 3 months</span></p>
+                    </div>
+                    <div class="course-details-box">
+                        <img src="Assets/hero-section/time-svg.svg" alt="">
+                        <p>Cost: <span> 5000</span>$</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="buttons-box">
+                <button>
+                    <img src="Assets/hero-section/course-link.svg" alt="">
+                    <span>Copy course link</span>
+                </button>
+                <button>
+                    <img src="Assets//hero-section/pdf-download.svg" alt="">
+                    <span>Download course brochure</span>
+                </button>
+                <button>
+                    <img src="Assets/hero-section/course-brochure.svg" alt="">
+                    <span>Send me course brochure</span>
+                </button>
+                <button>
+                    <img src="./Assets/hero-section/call.svg" alt="">
+                    <span>Call me back</span>
+                </button>
+                <button>
+                    <img src="Assets/hero-section/course-inquiries.svg" alt="">
+                    <span>Course inquiry</span>
+                </button>
+                <button>
+                    <img src="Assets/hero-section/house-perposal.svg" alt="">
+                    <span>House perposal</span>
+                </button>
+            </div>
+            <button class="apply-button">Apply for Training</button>
+        </div>
+    </div>
+
+
+
+    <!------------------------------------------------- footer ------------------------------------------------>
+    <footer>
+        <div class="footer-media-heading">
+            <h1>Pathways</h1>
+            <p>The Pathways Training and Management Consultancy provides inclusive training programmes that aim
+                to craft trainees and organisations advantages, adding the most valuable skills to their
+                careers.
+            </p>
+        </div>
+        <div class="footer-inner">
+            <div class="footer-left-side">
+                <div class="footer-heading">
+                    <h1>Pathways</h1>
+                    <p>The Pathways Training and Management Consultancy provides inclusive training programmes that aim
+                        to craft trainees and organisations advantages, adding the most valuable skills to their
+                        careers.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="links-left">
+                        <div class="links-box">
+                            <p class="links-heading">
+                                <svg width="20" height="24" viewBox="0 0 20 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.06496 11.9995L1.19688 2.39758C0.909259 1.68002 1.25178 0.862661 1.96188 0.572036C2.40354 0.391286 2.88415 0.455646 3.25306 0.703614L18.2877 10.8318C18.9258 11.2617 19.0983 12.1331 18.6728 12.778C18.5668 12.9392 18.4283 13.0767 18.2663 13.1816L3.25306 23.2953C2.6149 23.7253 1.75259 23.551 1.3271 22.9061C1.04834 22.4836 1.02631 21.9638 1.22379 21.5347L5.06496 11.9995Z"
+                                        fill="#FFE9E9" stroke="white" stroke-width="0.937506"
+                                        stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.5313 18.3695L14.9876 11.9992L5.53125 5.62891L8.09752 11.9992L5.5313 18.3695Z"
+                                        fill="#FD2626" />
+                                </svg>
+                                <span>Pages</span>
+                            </p>
+                            <a href="../index.html">Home</a>
+                            <a href="../Categories/Categories.html">Categories</a>
+                            <a href="../CustomCourses/CustomCourses.html">Custom Courses</a>
+                            <a href="../AboutUs/AboutUs.html">About Us</a>
+                            <a href="../ContactUs/ContactUs.html">Contact Us</a>
+                            <a href="../Careers/Careers.html">Careers</a>
+                        </div>
+                        <div class="links-box">
+                            <p class="links-heading">
+                                <svg width="20" height="24" viewBox="0 0 20 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.06496 11.9995L1.19688 2.39758C0.909259 1.68002 1.25178 0.862661 1.96188 0.572036C2.40354 0.391286 2.88415 0.455646 3.25306 0.703614L18.2877 10.8318C18.9258 11.2617 19.0983 12.1331 18.6728 12.778C18.5668 12.9392 18.4283 13.0767 18.2663 13.1816L3.25306 23.2953C2.6149 23.7253 1.75259 23.551 1.3271 22.9061C1.04834 22.4836 1.02631 21.9638 1.22379 21.5347L5.06496 11.9995Z"
+                                        fill="#FFE9E9" stroke="white" stroke-width="0.937506"
+                                        stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.5313 18.3695L14.9876 11.9992L5.53125 5.62891L8.09752 11.9992L5.5313 18.3695Z"
+                                        fill="#FD2626" />
+                                </svg>
+                                <span>Quick Access</span>
+                            </p>
+                            <a href="">Top courses</a>
+                            <a href="">Upcoming courses</a>
+                            <a href="">Get your training certificate</a>
+                        </div>
+                    </div>
+                    <div class="links-right">
+                        <p class="links-heading">
+                            <svg width="20" height="24" viewBox="0 0 20 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.06496 11.9995L1.19688 2.39758C0.909259 1.68002 1.25178 0.862661 1.96188 0.572036C2.40354 0.391286 2.88415 0.455646 3.25306 0.703614L18.2877 10.8318C18.9258 11.2617 19.0983 12.1331 18.6728 12.778C18.5668 12.9392 18.4283 13.0767 18.2663 13.1816L3.25306 23.2953C2.6149 23.7253 1.75259 23.551 1.3271 22.9061C1.04834 22.4836 1.02631 21.9638 1.22379 21.5347L5.06496 11.9995Z"
+                                    fill="#FFE9E9" stroke="white" stroke-width="0.937506" stroke-miterlimit="22.9256"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.5313 18.3695L14.9876 11.9992L5.53125 5.62891L8.09752 11.9992L5.5313 18.3695Z"
+                                    fill="#FD2626" />
+                            </svg>
+                            <span>More</span>
+                        </p>
+                        <a href="">Terms of use</a>
+                        <a href="">Copy rights</a>
+                        <a href="">Why we are the best ?</a>
+                        <a href="">Training curriculum</a>
+                        <a href="">Privacy policy agreement</a>
+                        <a href="">Registration, payment and cancellation policy</a>
+                        <a href="">Terms and conditions of the training program venue</a>
+                        <a href="">Adding us to your safe sender list</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right-side">
+                <div class="email-section">
+                    <h2>Receive Our News</h2>
+                    <p>Subscribe now to our mailing list and keep up to date with our offers and news</p>
+                    <div class="email-box">
+                        <form action="">
+                            <input placeholder="Enter your email here..." type="text">
+                            <button>Send</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="contact-section">
+                    <p class="contact-heading">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.977 2.5723C11.2599 2.55945 10.5473 2.68821 9.8801 2.95121C9.21288 3.21422 8.60412 3.60629 8.08869 4.10498C7.57325 4.60366 7.16127 5.19914 6.87638 5.85732C6.5927 6.51267 6.44057 7.21735 6.42857 7.93131V15.4286C6.42857 16.3753 5.66105 17.1429 4.71429 17.1429H2.57143C1.15127 17.1429 0 15.9916 0 14.5714V11.1429C0 9.72269 1.15127 8.57143 2.57143 8.57143H3.85714V7.90166C3.87309 6.84631 4.09726 5.80445 4.51654 4.83583C4.93582 3.86721 5.54213 2.99083 6.30069 2.25693C7.05924 1.52301 7.95518 0.945993 8.93712 0.558931C9.91191 0.174687 10.9525 -0.0148615 12 0.000909105C13.0475 -0.0148615 14.0881 0.174687 15.0629 0.558931C16.0448 0.945993 16.9408 1.52301 17.6993 2.25693C18.4579 2.99083 19.0642 3.86721 19.4834 4.83583C19.9027 5.80445 20.1267 6.84631 20.1427 7.90166L20.143 7.92108L20.1429 8.57143H21.4286C22.8487 8.57143 24 9.72269 24 11.1429V14.5714C24 15.9916 22.8487 17.1429 21.4286 17.1429H20.1429V18C20.1429 19.2502 19.6462 20.4494 18.762 21.3334C18.0038 22.0917 17.0139 22.565 15.9587 22.6845C15.5185 23.4694 14.6784 24 13.7143 24H11.1429C9.72269 24 8.57143 22.8487 8.57143 21.4286C8.57143 20.0085 9.72269 18.8571 11.1429 18.8571H13.7143C14.6434 18.8571 15.4574 19.3498 15.9092 20.0883C16.2979 19.9989 16.6573 19.8017 16.9438 19.5153C17.3457 19.1134 17.5714 18.5683 17.5714 18V7.93133C17.5594 7.21737 17.4074 6.51267 17.1236 5.85732C16.8387 5.19914 16.4267 4.60366 15.9113 4.10498C15.3959 3.60629 14.7871 3.21422 14.1199 2.95121C13.4527 2.68821 12.7401 2.55945 12.023 2.5723C12.0077 2.57258 11.9923 2.57258 11.977 2.5723Z"
+                                fill="white" />
+                        </svg>
+                        <span>Contact Us</span>
+                    </p>
+
+                    <div class="contact-info">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.4333 16.7366C19.4333 17.006 19.3734 17.2829 19.2462 17.5523C19.119 17.8217 18.9543 18.0761 18.7373 18.3156C18.3706 18.7197 17.9665 19.0116 17.51 19.1987C17.0609 19.3858 16.5745 19.4831 16.0506 19.4831C15.2873 19.4831 14.4716 19.3035 13.6109 18.9368C12.7503 18.5701 11.8897 18.0761 11.0365 17.455C10.1759 16.8264 9.36019 16.1304 8.58188 15.3596C7.81106 14.5812 7.11507 13.7655 6.49392 12.9124C5.88026 12.0592 5.38633 11.2061 5.02711 10.3604C4.66789 9.50727 4.48828 8.69155 4.48828 7.91324C4.48828 7.40435 4.57809 6.9179 4.7577 6.46888C4.93731 6.01237 5.22169 5.59328 5.61832 5.2191C6.09728 4.74762 6.62114 4.51562 7.17494 4.51562C7.38449 4.51562 7.59403 4.56053 7.78112 4.65033C7.9757 4.74014 8.14783 4.87484 8.28253 5.06942L10.0188 7.5166C10.1535 7.70369 10.2508 7.87582 10.3181 8.04046C10.3855 8.19762 10.4229 8.35478 10.4229 8.49697C10.4229 8.67658 10.3705 8.85619 10.2657 9.02831C10.1684 9.20044 10.0262 9.38005 9.84663 9.55966L9.27787 10.1509C9.19555 10.2332 9.15813 10.3305 9.15813 10.4502C9.15813 10.5101 9.16561 10.5625 9.18058 10.6223C9.20303 10.6822 9.22548 10.7271 9.24045 10.772C9.37516 11.019 9.60715 11.3408 9.93644 11.7299C10.2732 12.1191 10.6324 12.5157 11.0216 12.9124C11.4257 13.309 11.8149 13.6757 12.2115 14.0125C12.6006 14.3418 12.9224 14.5663 13.1769 14.701C13.2143 14.7159 13.2592 14.7384 13.3116 14.7609C13.3715 14.7833 13.4313 14.7908 13.4987 14.7908C13.6259 14.7908 13.7232 14.7459 13.8055 14.6636L14.3743 14.1023C14.5614 13.9152 14.741 13.773 14.9131 13.6832C15.0852 13.5784 15.2574 13.526 15.4445 13.526C15.5867 13.526 15.7363 13.556 15.901 13.6233C16.0656 13.6907 16.2377 13.788 16.4248 13.9152L18.9019 15.6739C19.0965 15.8086 19.2312 15.9657 19.3136 16.1528C19.3884 16.3399 19.4333 16.527 19.4333 16.7366Z"
+                                stroke="#FD2626" stroke-width="1.12256" stroke-miterlimit="10" />
+                        </svg>
+                        <p><span>+971566356223</span> / <span>+971566356223</span></p>
+                    </div>
+                    <div class="contact-info">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.7139 18.361H8.23015C5.98503 18.361 4.48828 17.2385 4.48828 14.6191V9.38054C4.48828 6.76123 5.98503 5.63867 8.23015 5.63867H15.7139C17.959 5.63867 19.4557 6.76123 19.4557 9.38054V14.6191C19.4557 17.2385 17.959 18.361 15.7139 18.361Z"
+                                stroke="#FD2626" stroke-width="1.12256" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M15.7142 9.75488L13.3718 11.6258C12.601 12.2395 11.3362 12.2395 10.5654 11.6258L8.23047 9.75488"
+                                stroke="#FD2626" stroke-width="1.12256" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <p>europeanqualitytc@hotmail.com</p>
+                    </div>
+                    <div class="contact-info">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.0002 13.0726C13.2925 13.0726 14.3402 12.0249 14.3402 10.7326C14.3402 9.44023 13.2925 8.39258 12.0002 8.39258C10.7078 8.39258 9.66016 9.44023 9.66016 10.7326C9.66016 12.0249 10.7078 13.0726 12.0002 13.0726Z"
+                                stroke="white" stroke-width="1.125" />
+                            <path
+                                d="M5.71332 9.3675C7.19082 2.8725 16.8133 2.88 18.2833 9.375C19.1458 13.185 16.7758 16.41 14.6983 18.405C13.1908 19.86 10.8058 19.86 9.29082 18.405C7.22082 16.41 4.85082 13.1775 5.71332 9.3675Z"
+                                stroke="white" stroke-width="1.125" />
+                        </svg>
+                        <p>Netherlands - Amsterdam -Noord-Brabant -Rooiven 36 - building 7 - 3rd floor</p>
+                    </div>
+                </div>
+
+                <div class="payment-section">
+                    <div class="payment-heading">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.7068 7.29614C13.7068 5.94995 14.802 4.85474 16.1482 4.85474H16.9931L16.7382 4.14624C16.5949 3.7478 16.2194 3.5 15.8192 3.5C15.7083 3.5 15.5955 3.51904 15.4853 3.55918L6.94753 6.66665C6.43996 6.85142 6.17873 7.41309 6.36457 7.92026L6.81569 9.15161H13.7068V7.29614Z"
+                                fill="#E4F1FE" />
+                            <path
+                                d="M16.1465 6.32031C15.6071 6.32031 15.1699 6.75752 15.1699 7.29688V9.15234H23.7148V7.29688C23.7148 6.75752 23.2776 6.32031 22.7383 6.32031H16.1465ZM26.3027 23.2393H22.8848C20.8655 23.2393 19.2227 21.5964 19.2227 19.5771C19.2227 17.5579 20.8655 15.915 22.8848 15.915H26.3027V12.5703C26.3027 11.4917 25.4283 10.6172 24.3496 10.6172H5.45312C4.37446 10.6172 3.5 11.4917 3.5 12.5703V26.5476C3.5 27.6263 4.37446 28.5007 5.45312 28.5007H24.3496C25.4283 28.5007 26.3027 27.6263 26.3027 26.5476V23.2393Z"
+                                fill="#0884F7" />
+                            <path
+                                d="M27.7676 17.3789H22.8848C21.6732 17.3789 20.6875 18.3646 20.6875 19.5762C20.6875 20.7877 21.6732 21.7734 22.8848 21.7734H27.7676C28.1714 21.7734 28.5 21.4449 28.5 21.041V18.1113C28.5 17.7075 28.1714 17.3789 27.7676 17.3789ZM22.8848 20.3086C22.4803 20.3086 22.1523 19.9807 22.1523 19.5762C22.1523 19.1717 22.4803 18.8438 22.8848 18.8438C23.2893 18.8438 23.6172 19.1717 23.6172 19.5762C23.6172 19.9807 23.2893 20.3086 22.8848 20.3086Z"
+                                fill="#E4F1FE" />
+                        </svg>
+                        <span>Payment Methods</span>
+                    </div>
+
+                    <div class="payment-methods">
+                        <img src="./Assets/payment1.svg" alt="">
+                        <img src="./Assets//payment2.svg" alt="">
+                        <img src="./Assets//payment3.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyrights-section">
+            <div class="socials-box">
+                <h3>Pathways</h3>
+                <div class="social">
+                    <a href="">
+                        <svg class="linkedin" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_108_51005)">
+                                <rect width="32" height="32" rx="16" fill="white" fill-opacity="0.05" />
+                                <path
+                                    d="M12.4369 9.48798C12.4369 9.97079 12.2937 10.4428 12.0255 10.8442C11.7573 11.2456 11.376 11.5585 10.93 11.7433C10.4839 11.928 9.99309 11.9764 9.51956 11.8822C9.04603 11.788 8.61107 11.5555 8.26967 11.2141C7.92828 10.8727 7.69578 10.4377 7.60159 9.96422C7.5074 9.49069 7.55574 8.99987 7.74051 8.55381C7.92527 8.10776 8.23815 7.72651 8.63959 7.45828C9.04103 7.19004 9.51299 7.04688 9.9958 7.04688C10.6432 7.04688 11.2641 7.30406 11.7219 7.76186C12.1797 8.21966 12.4369 8.84056 12.4369 9.48798ZM11.8836 13.5565V24.3413C11.884 24.4209 11.8687 24.4997 11.8386 24.5734C11.8084 24.647 11.764 24.7139 11.7079 24.7703C11.6518 24.8268 11.5851 24.8715 11.5116 24.9021C11.4382 24.9326 11.3594 24.9483 11.2798 24.9483H8.70689C8.62733 24.9485 8.54851 24.933 8.47496 24.9027C8.40142 24.8723 8.33459 24.8278 8.27833 24.7715C8.22207 24.7152 8.17749 24.6484 8.14714 24.5749C8.11679 24.5013 8.10128 24.4225 8.1015 24.3429V13.5565C8.1015 13.3959 8.16528 13.2419 8.27881 13.1284C8.39235 13.0149 8.54633 12.9511 8.70689 12.9511H11.2798C11.4401 12.9515 11.5937 13.0155 11.7068 13.129C11.82 13.2425 11.8836 13.3962 11.8836 13.5565ZM25.3325 19.171V24.3918C25.3327 24.4649 25.3184 24.5374 25.2905 24.605C25.2626 24.6726 25.2217 24.7341 25.1699 24.7858C25.1182 24.8375 25.0568 24.8785 24.9891 24.9064C24.9215 24.9343 24.849 24.9485 24.7759 24.9483H22.0093C21.9362 24.9485 21.8637 24.9343 21.7961 24.9064C21.7284 24.8785 21.667 24.8375 21.6153 24.7858C21.5635 24.7341 21.5226 24.6726 21.4947 24.605C21.4668 24.5374 21.4525 24.4649 21.4527 24.3918V19.3322C21.4527 18.577 21.6741 16.0253 19.4787 16.0253C17.778 16.0253 17.4314 17.7715 17.3631 18.5559V24.3918C17.3631 24.538 17.3056 24.6783 17.2029 24.7825C17.1003 24.8866 16.9608 24.9462 16.8146 24.9483H14.1424C14.0694 24.9483 13.9971 24.9339 13.9297 24.9059C13.8622 24.8779 13.801 24.8369 13.7494 24.7852C13.6979 24.7335 13.657 24.6721 13.6293 24.6046C13.6015 24.5371 13.5873 24.4648 13.5875 24.3918V13.5093C13.5873 13.4363 13.6015 13.3639 13.6293 13.2964C13.657 13.2289 13.6979 13.1675 13.7494 13.1158C13.801 13.0641 13.8622 13.0231 13.9297 12.9951C13.9971 12.9671 14.0694 12.9527 14.1424 12.9527H16.8146C16.9622 12.9527 17.1038 13.0114 17.2082 13.1157C17.3126 13.2201 17.3712 13.3617 17.3712 13.5093V14.4499C18.0026 13.5028 18.9384 12.7721 20.9352 12.7721C25.3585 12.7721 25.3325 16.9024 25.3325 19.171Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_b_108_51005" x="-4" y="-4" width="40" height="40"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                    <feComposite in2="SourceAlpha" operator="in"
+                                        result="effect1_backgroundBlur_108_51005" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_108_51005"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg class="x" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_108_51008)">
+                                <path
+                                    d="M17.0687 15.4551L24.2698 25.7553H21.3145L15.4381 17.3503V17.3498L14.5754 16.1159L7.71094 6.29688H10.6663L16.2059 14.2212L17.0687 15.4551Z"
+                                    fill="white" />
+                                <path
+                                    d="M28.5423 0L3.45767 0C1.5481 0 0 1.5481 0 3.45767L0 28.5423C0 30.4519 1.5481 32 3.45767 32H28.5423C30.4519 32 32 30.4519 32 28.5423V3.45767C32 1.5481 30.4519 0 28.5423 0ZM20.4106 27.1366L14.4642 18.4823L7.01914 27.1366H5.09496L13.6098 17.2393L5.09496 4.84694H11.5894L17.2203 13.042L24.2702 4.84694H26.1944L18.0749 14.2852H18.0744L26.905 27.1366H20.4106Z"
+                                    fill="white" fill-opacity="0.05" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_b_108_51008" x="-4" y="-4" width="40" height="40"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                    <feComposite in2="SourceAlpha" operator="in"
+                                        result="effect1_backgroundBlur_108_51008" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_108_51008"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg class="instagram" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_108_51011)">
+                                <path
+                                    d="M32 15.9948C32 22.6746 31.9931 24.6282 31.9616 25.008C31.8476 26.3788 31.6317 27.2318 31.1689 28.1611C30.8132 28.8773 30.4008 29.4421 29.8228 29.9995C28.7687 31.0147 27.4719 31.63 25.9303 31.8527C25.1819 31.961 25.0293 31.9925 21.2067 31.9989C19.9325 32.0014 18.2556 31.9989 16.0063 31.9989C9.33002 31.9989 7.37786 31.9915 6.99875 31.9595C5.66448 31.8488 4.82502 31.6396 3.90679 31.1966C2.1491 30.35 0.829607 28.7331 0.337258 26.8282C0.167399 26.1686 0.0738509 25.4401 0.0295394 24.5049C0.0123085 24.1087 5.21474e-07 20.0701 6.98115e-07 16.029C8.74757e-07 11.9879 0.00492201 7.94681 0.0246173 7.56042C0.0755741 6.47755 0.160016 5.84875 0.339723 5.15349C0.834535 3.23632 2.13434 1.64892 3.91664 0.785083C4.81272 0.350703 5.68417 0.130437 6.94877 0.0307625C7.22449 0.00910651 11.6204 -8.90819e-07 16.0105 -6.98925e-07C20.4012 -5.06998e-07 24.7891 0.0098416 25.0648 0.0314996C26.3498 0.132404 27.2139 0.352674 28.1272 0.801082C28.8748 1.16901 29.4331 1.57755 30.004 2.17067C31.0153 3.22918 31.6307 4.5237 31.8533 6.06631C31.9614 6.81374 31.9934 6.96263 32 10.7871L32 15.9948Z"
+                                    fill="white" fill-opacity="0.05" />
+                                <path
+                                    d="M27.8164 16.0023C27.8164 19.2105 27.8024 19.6131 27.745 20.8732C27.6874 22.1308 27.4883 22.9893 27.196 23.7404C26.8942 24.5173 26.4905 25.1764 25.8335 25.833C25.1767 26.4901 24.5174 26.8937 23.7405 27.1965C22.9889 27.4893 22.13 27.6887 20.8726 27.7453C19.6121 27.8016 19.2092 27.8164 16 27.8164C12.7909 27.8164 12.3894 27.8021 11.129 27.745C9.87101 27.6872 9.01235 27.4881 8.26102 27.1962C7.48385 26.8942 6.82459 26.4906 6.1678 25.8338C5.51051 25.1774 5.1058 24.5183 4.80399 23.7418C4.51178 22.9902 4.31263 22.1316 4.25502 20.8742C4.19766 19.6141 4.18363 19.2117 4.18363 16.0037C4.18363 12.7952 4.19766 12.3938 4.25502 11.1338C4.31263 9.87615 4.51178 9.01674 4.80399 8.26513C5.1058 7.48842 5.51051 6.83033 6.1678 6.17395C6.82459 5.51685 7.48385 5.11323 8.26078 4.81052C9.01235 4.52011 9.87125 4.32077 11.1287 4.2617C12.3891 4.2051 12.7909 4.19033 16 4.19033C19.2092 4.19033 19.6119 4.2051 20.8723 4.2617C22.1303 4.32077 22.9889 4.52011 23.7402 4.81052C24.5174 5.11324 25.1767 5.51685 25.8335 6.17396C26.4908 6.83106 26.8945 7.48817 27.196 8.26587C27.4883 9.01896 27.6874 9.87788 27.745 11.1355C27.8024 12.3956 27.8164 12.7967 27.8164 16.006L27.8164 16.0023ZM25.687 17.062C25.6875 16.7475 25.687 16.3965 25.687 16.0023C25.687 12.8481 25.6757 12.4743 25.6191 11.2288C25.5664 10.077 25.3739 9.45186 25.2121 9.03545C24.998 8.48417 24.7419 8.09113 24.3284 7.67792C23.9148 7.26446 23.5209 7.00851 22.9695 6.7939C22.5534 6.63221 21.9282 6.43951 20.7761 6.38709C19.5304 6.33048 19.1562 6.31818 16.0027 6.31818C12.8492 6.31818 12.475 6.33048 11.2294 6.38709C10.0773 6.43975 9.45202 6.63221 9.03598 6.7939C8.48455 7.00802 8.0919 7.26446 7.67857 7.67792C7.265 8.09138 7.00898 8.48392 6.79481 9.03545C6.63233 9.45137 6.44032 10.077 6.38764 11.2288C6.33102 12.4741 6.31871 12.8481 6.31871 16.0023C6.3187 19.1566 6.33101 19.5305 6.38763 20.7758C6.44081 21.9275 6.63332 22.5527 6.79505 22.9693C7.00923 23.5206 7.26525 23.9144 7.67882 24.3278C8.09239 24.7413 8.48529 24.9972 9.03697 25.2118C9.453 25.3735 10.0783 25.5662 11.2304 25.6187C12.476 25.6753 12.8502 25.6866 16.0057 25.6866C19.1611 25.6866 19.5334 25.6753 20.779 25.6187C21.9311 25.566 22.5564 25.3735 22.9729 25.2119C23.5243 24.9977 23.9182 24.7413 24.3318 24.3278C24.7454 23.9144 25.0014 23.5206 25.2161 22.9693C25.3785 22.5529 25.5706 21.9275 25.6235 20.7758C25.6727 19.686 25.6875 19.2637 25.6899 17.062L25.687 17.062ZM23.725 9.69649C23.725 10.4791 23.0906 11.1141 22.3075 11.1141C21.5247 11.1141 20.8895 10.4791 20.8895 9.69649C20.8895 8.91387 21.5247 8.27891 22.3075 8.27891C23.0903 8.27891 23.7255 8.91387 23.7255 9.69649L23.725 9.69649ZM22.0682 16.0023C22.0682 19.3525 19.3512 22.0688 16 22.0688C12.6488 22.0688 9.93304 19.3525 9.93304 16.0023C9.93304 12.652 12.6488 9.93669 16 9.93669C19.3512 9.93669 22.0682 12.652 22.0682 16.0023ZM19.9388 16.0023C19.9388 13.8277 18.1755 12.0645 16 12.0645C13.8248 12.0645 12.0612 13.8277 12.0612 16.0023C12.0612 18.1771 13.8248 19.94 16 19.94C18.1755 19.94 19.9388 18.1771 19.9388 16.0023Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_b_108_51011" x="-4" y="-4" width="40" height="40"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                    <feComposite in2="SourceAlpha" operator="in"
+                                        result="effect1_backgroundBlur_108_51011" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_108_51011"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg class="youtube" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_108_51014)">
+                                <path
+                                    d="M31.2899 24.2002C30.9172 25.5787 29.8418 26.6581 28.4633 27.0268C26.6117 27.7416 8.67725 28.0919 3.4747 27.0063C2.09623 26.6335 1.0168 25.5582 0.648114 24.1797C-0.187572 20.5134 -0.251068 12.5866 0.668596 8.83833C1.04138 7.45986 2.11671 6.38043 3.49518 6.01175C7.16155 5.16787 24.5922 5.04907 28.4838 6.01175C29.8623 6.38453 30.9417 7.45986 31.3104 8.83833C32.2014 12.8324 32.2649 20.2676 31.2899 24.2002Z"
+                                    fill="white" fill-opacity="0.05" />
+                            </g>
+                            <path d="M21.2514 16.5201L12.8945 21.313V11.7272L21.2514 16.5201Z" fill="white" />
+                            <defs>
+                                <filter id="filter0_b_108_51014" x="-4" y="1.3335" width="40" height="30.3638"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                    <feComposite in2="SourceAlpha" operator="in"
+                                        result="effect1_backgroundBlur_108_51014" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_108_51014"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg class="whatsapp" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_108_51017)" filter="url(#filter0_b_108_51017)">
+                                <path
+                                    d="M16.1929 31.318C13.5043 31.3188 10.879 30.6108 8.56512 29.2645L0.65914 31.4468L2.78057 23.2928C1.56232 21.0375 0.923981 18.5106 0.923823 15.9428L0.923823 15.936C0.923823 7.45915 7.76823 0.55878 16.1809 0.555154C20.2574 0.553529 24.0907 2.15203 26.9747 5.05628C29.8584 7.96003 31.4474 11.8219 31.4492 15.9367C31.4492 24.4145 24.6052 31.3144 16.1929 31.3179"
+                                    fill="white" fill-opacity="0.05" />
+                                <path
+                                    d="M22.8044 19.916C23.4621 20.2143 23.4754 20.5282 23.4869 20.8118C23.4968 21.044 23.4961 21.3095 23.4961 21.5748C23.4961 21.8403 23.397 22.2717 23.0019 22.6363C22.6065 23.0013 21.651 24.0298 19.7076 24.0298C17.764 24.0298 15.8858 22.6032 15.622 22.4043C15.3587 22.2052 11.2428 19.6502 9.65943 15.6037C8.34359 12.2407 8.60529 11.5563 8.67128 10.8264C8.73701 10.0964 9.62656 8.47091 10.549 8.13929C11.4713 7.80741 12.2618 7.80741 12.4271 7.90691C12.5916 8.00641 12.6905 8.27191 12.888 8.67004C13.0855 9.06829 14.0412 11.0255 14.173 11.3904C14.3048 11.7554 14.3705 12.0208 13.975 12.2863C13.5801 12.5518 12.6905 13.3142 12.4271 13.5465C12.163 13.7787 12.1301 14.011 12.3277 14.409C12.5259 14.8074 12.9425 16.0895 14.2881 17.6107C15.3352 18.7942 16.6282 19.5932 17.0238 19.8254C17.4187 20.0577 17.6328 19.8503 17.8296 19.6507C18.0066 19.4718 18.2909 19.2524 18.5214 19.0532C18.7521 18.8547 18.9167 18.7884 19.1802 18.6557C19.4439 18.5228 19.6746 18.5893 19.8721 18.6887C20.0697 18.7884 22.0233 19.562 22.8044 19.916Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_b_108_51017" x="-4" y="-4" width="40" height="40"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                    <feComposite in2="SourceAlpha" operator="in"
+                                        result="effect1_backgroundBlur_108_51017" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_108_51017"
+                                        result="shape" />
+                                </filter>
+                                <clipPath id="clip0_108_51017">
+                                    <rect width="32" height="32" fill="white"
+                                        transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 32 32)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg class="facebook" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_b_108_51021)">
+                                <path
+                                    d="M32 16C32 23.9863 26.1488 30.6056 18.5 31.8056V20.625H22.2281L22.9375 16H18.5V12.9988C18.5 11.7331 19.12 10.5 21.1075 10.5H23.125V6.5625C23.125 6.5625 21.2938 6.25 19.5431 6.25C15.8888 6.25 13.5 8.465 13.5 12.475V16H9.4375V20.625H13.5V31.8056C5.85125 30.6056 0 23.9863 0 16C0 7.16375 7.16375 0 16 0C24.8363 0 32 7.16375 32 16Z"
+                                    fill="white" fill-opacity="0.05" />
+                                <path
+                                    d="M22.2281 20.625L22.9375 16H18.5V12.9987C18.5 11.7334 19.1199 10.5 21.1074 10.5H23.125V6.5625C23.125 6.5625 21.294 6.25 19.5434 6.25C15.8887 6.25 13.5 8.465 13.5 12.475V16H9.4375V20.625H13.5V31.8056C14.3146 31.9334 15.1495 32 16 32C16.8505 32 17.6854 31.9334 18.5 31.8056V20.625H22.2281Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_b_108_51021" x="-4" y="-4" width="40" height="40"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                    <feComposite in2="SourceAlpha" operator="in"
+                                        result="effect1_backgroundBlur_108_51021" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_108_51021"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+
+            <p>© 2024 Pathways. All Rights Reserved. </p>
+
+
+            <img src="./Assets/copyright-svg.svg" alt="">
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
